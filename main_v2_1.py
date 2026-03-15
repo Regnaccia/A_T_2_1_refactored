@@ -20,7 +20,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--separator", default="_", help="Separator used by naming policy")
     parser.add_argument("--format", default="json", choices=["json", "yaml"], help="Output format")
-    parser.add_argument("--output", default="", help="Optional output file path")
+    parser.add_argument("--output", default="config.json", help="Optional output file path")
     parser.add_argument("--log-mode", default="verbose", choices=["silent", "normal", "verbose"])
     return parser
 
